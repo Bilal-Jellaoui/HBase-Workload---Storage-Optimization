@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================
+     core-site.xml — Configuration Hadoop corrigée
+     Projet BMA — Master Big Data — Université Ibn Tofail
+     IMPORTANT : proxyuser nécessaire pour Oozie
+     ============================================================ -->
+<configuration>
+  <!-- IP réelle du NameNode -->
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://192.168.56.101:9000</value>
+  </property>
+  <!-- Fix Oozie : autoriser hdoop à soumettre des jobs -->
+  <property>
+    <name>hadoop.proxyuser.hdoop.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hdoop.groups</name>
+    <value>*</value>
+  </property>
+</configuration>

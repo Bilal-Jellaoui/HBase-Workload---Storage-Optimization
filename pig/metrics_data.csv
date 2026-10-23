@@ -1,0 +1,11 @@
+row_key,requests_per_sec,used_gb,hfile_count
+0_metrics_1781632610000_localhost,227,20,80
+0_metrics_1781632730000_localhost,530,23,75
+0_metrics_1781632970000_localhost,789,31,45
+1_metrics_1781632610000_localhost,312,25,60
+1_metrics_1781632730000_localhost,678,30,55
+2_metrics_1781632610000_localhost,189,15,82
+2_metrics_1781632730000_localhost,423,28,70
+3_metrics_1781632610000_localhost,556,22,65
+3_metrics_1781632730000_localhost,234,19,88
+3_metrics_1781632850000_localhost,445,18,76
