@@ -29,11 +29,9 @@
 | Nom | GitHub |
 |-----|--------|
 | **Bilal Jellaoui** | [@Bilal-Jellaoui](https://github.com/Bilal-Jellaoui) |
-| **Mohammed Azil** | — |
-| **Ayoube Echihami** | — |
+| **M.Azil** | — |
+| **A.Echihami** | — |
 
-**Encadrante :** Mme MANAR SAIS  
-**Coordinatrice :** Mme NAJAT RAFALIA
 
 ---
 
