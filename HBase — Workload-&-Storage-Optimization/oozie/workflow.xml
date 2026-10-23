@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================
+     workflow.xml — Workflow Oozie BMA (L6)
+     Projet BMA — Master Big Data — Université Ibn Tofail
+     Status obtenu : SUCCEEDED
+     Job ID : 0000000-260618120933658-oozie-hdoo-W
+     ============================================================ -->
+<workflow-app name="bma-hbase-optimizer" xmlns="uri:oozie:workflow:0.4">
+
+    <start to="check-hdfs"/>
+
+    <!-- Action 1 : Vérification HDFS -->
+    <action name="check-hdfs">
+        <fs>
+            <mkdir path="${nameNode}/user/hdoop/bma-workflow/preuve"/>
+        </fs>
+        <ok to="end"/>
+        <error to="fail"/>
+    </action>
+
+    <kill name="fail">
+        <message>Workflow BMA échoué — vérifier les logs</message>
+    </kill>
+
+    <end name="end"/>
+
+</workflow-app>
